@@ -30,10 +30,7 @@ def main():
         word_list = list(Name)
         
         def CharExist(Name: str, char: str, idx: int) -> bool:
-            if Name.find(char, idx+1) > 0:
-                return True
-            else:
-                return False
+            return True if Name.find(char, idx+1) > 0 else False
         
         isgroup = True
 
