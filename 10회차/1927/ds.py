@@ -11,7 +11,7 @@ def main():
 def act():
     x = int(sys.stdin.readline()[0])
 
-    if 
+    # if 
     pass
 
 if __name__ == '__main__':
