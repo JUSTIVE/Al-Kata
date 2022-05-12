@@ -14,7 +14,6 @@ def main():
         N = int(N)
         if not N in memo:
             memo[N] = min(solve(N//2) + N%2, solve(N//3) + N%3) + 1
-
         
         # if not N in memo:
         #     if N%2 and N%3: # 2, 3 둘다 나누어 떨어지지 않음
@@ -38,6 +37,7 @@ def main():
         #             memo[N] = solve(N/2) + 1
         #         elif not N%3:
         #             memo[N] = solve(N/3) + 1
+
         return memo[N]
     
     N = int(sys.stdin.readline())
